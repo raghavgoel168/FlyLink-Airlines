@@ -30,11 +30,13 @@ class details {
     cout << "\n Enter The Customer ID :";
     cin >> cid;
     cout << "\n Enter Your Name :";
-    cin >> name;
+    cin.ignore(); // Clear the input buffer
+    getline(cin, name);
     cout << "\n Enter Your Age  :";
     cin >> age;
     cout << "\n Enter Your Address :";
-    cin >> address;
+    cin.ignore(); // Clear the input buffer
+    getline(cin, address);
     cout << "\n Enter Your Gender :";
     cin >> gender;
     cout << "\n Your Details are saved with us \n";
